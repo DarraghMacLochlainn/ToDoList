@@ -1,0 +1,526 @@
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Funny Valentime","objectives":{"time": "18:00", "goal": "Become President"}}
+
+<> 2018-10-08T111013.200.html
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Funny Valentime","objectives":{, "time": "18:00", "goal": "Become President"}}
+
+<> 2018-10-08T111002.400.html
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "goal": "Become President"}}
+
+<> 2018-10-08T110929.200.html
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "goal": "Become President"}}
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "goal": "Become President"}}
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "goal": "Become President"}}
+
+<> 2018-10-08T110759.500.html
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "goal": "Become President"}}
+
+<> 2018-10-08T110756.200.json
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "goal": "Become President"}}
+
+<> 2018-10-08T110713.200.json
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "goal": "Become President"}}
+
+<> 2018-10-08T110710.200.json
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "goal": "Become President"}}
+
+<> 2018-10-08T110703.200.json
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "likes": 0, "goal": "Become President"}}
+
+<> 2018-10-08T110634.200.json
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "likes": 0, "goal": "Become President"}}
+
+<> 2018-10-08T110632.200.json
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "likes": 0, "goal": "Become President"}}
+
+<> 2018-10-08T110627.200.json
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Funny Valentime","objectives":{"time": "18:00", "likes": 0, "goal": "Become President"}}
+
+<> 2018-10-08T110519.200.json
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Funny Valentime","objectives":{"time": "18:00", "likes": 0, "goal": "Become President"}}
+
+<> 2018-10-08T110515.200.json
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "likes": 0, "goal": "Become President"}}
+
+<> 2018-10-08T110432.200.json
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "likes": 0, "goal": "Become President"}}
+
+<> 2018-10-08T110427.200.json
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", 'likes': 0, "goal": "Become President"}}
+
+<> 2018-10-08T110358.400.html
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"}}
+
+<> 2018-10-08T110242.400.html
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":{[{"todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"}]}}
+
+<> 2018-10-08T110231.400.html
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":["todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"]}
+
+<> 2018-10-08T110218.400.html
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":[{"todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"}]}
+
+<> 2018-10-08T110120.400.html
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":"[{"todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"}]"}
+
+<> 2018-10-08T110023.400.html
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives"[{"todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"}]}
+
+<> 2018-10-08T110004.400.html
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":[{"todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"}]}
+
+<> 2018-10-08T105921.400.html
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":[{"todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"}]
+
+<> 2018-10-08T105907.400.html
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":["todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"]
+
+<> 2018-10-08T105851.400.html
+
+###
+
+POST http://localhost:3000/users/profile/1000000
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":["todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"]
+
+<> 2018-10-08T105845.400.html
+
+###
+
+POST http://localhost:3000/users/profile/1000000
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":[{"todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"}]
+
+<> 2018-10-08T105811.400.html
+
+###
+
+POST http://localhost:3000/users/profile/1000000
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"}
+
+<> 2018-10-08T105759.400.html
+
+###
+
+PUT http://localhost:3000/users/profile/1000000
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+username:"Funny Valentime"
+
+<> 2018-10-08T105503.400.html
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+username:"Funny Valentime"
+
+<> 2018-10-08T105454.400.html
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+username:"Funny Valentime"
+
+<> 2018-10-08T105448.400.html
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-08T105436.200.json
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+"username":"Funny Valentime"
+
+<> 2018-10-08T105419.400.html
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+"username":"Funny Valentime"
+
+<> 2018-10-08T105418.400.html
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+"username":"Funny Valentime"
+
+<> 2018-10-08T105409.400.html
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+"username":"Funny Valentime"
+
+<> 2018-10-08T105329.400.html
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+"username":"Funny Valentime"
+
+<> 2018-10-08T105236.400.html
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+"username":"Funny Valentime"
+
+<> 2018-10-08T105203.400.html
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+"username":"Funny Valentime"
+
+<> 2018-10-08T105156.400.html
+
+###
+
+PUT http://localhost:3000/users/profile/1000000/newName
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+"username":"Funny Valentime"
+
+<> 2018-10-08T105150.400.html
+
+###
+
+PUT http://localhost:3000/users/profile/1000000/newName
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+"username":"Funny Valentime"
+
+<> 2018-10-08T105139.400.html
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-08T105044.200.json
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-08T094210.200.json
+
+###
+
+DELETE http://localhost:3000/users/objective/1000003
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-08T094204.200.json
+
+###
+
+DELETE http://localhost:3000/users/objective/100003
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-08T094201.200.html
+
+###
+
+DELETE http://localhost:3000/users/objective/100
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-08T094156.200.html
+
+###
+
+DELETE http://localhost:3000/users/objective/100
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+DELETE http://localhost:3000/users/objective/100
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+

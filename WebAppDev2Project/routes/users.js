@@ -39,7 +39,7 @@ router.findOne = (req, res) => {
     }
 }
 
-//GET all users WITHOUT thier objectives
+//GET all users WITHOUT their objectives
 router.findAllUsers = (req, res) => {
     // Return a JSON representation of our list
     res.setHeader('Content-Type', 'application/json');
@@ -97,7 +97,7 @@ router.addUserAndObjective = (req, res) => {
     });
 
     if ((currentSize + 1) == users.length)
-        res.json({message: 'User Added!'});
+        res.send(JSON.stringify({message: 'User Added!',users}, null, 5));
     else
         res.json({message: 'User NOT Added!'});
 }
@@ -137,20 +137,109 @@ router.addObjective = (req, res) => {
     }
 }
 
+/*
 //PUT change user name
-//app.put('/users/:user_id/newName', users.changeUsername);
+router.changeUsername = (req, res) => {
+    var user = getByValue(users, req.params.user_id);
+
+    if (user != null) {
+        user.username = req.body.username;
+        res.setHeader('Content-Type', 'application/json');
+        res.send(JSON.stringify({status: 200, message: "Change Successful", user: user}, null, 5));
+    } else {
+        res.json("Error: ID not found");
+    }
+}
 
 //PUT change objective time
-//app.put('/users/:todo_id/newTime', users.changeTime);
+router.changeTime = (req, res) => {
+    for (let i = 0; i < users.length; i++) {
+        var objective = getByObjectiveValue(users[i].objectives, req.params.todo_id);
+        if (objective == null) {
+            if (i == users.length - 1) {
+                res.send("Error: ID Not Found");
+            }
+            else
+                continue;
+        } else {
+            users[i].objectives.time = req.body.time;
+            res.setHeader('Content-Type', 'application/json');
+            res.send(JSON.stringify({
+                status: 200,
+                message: "Change Successful",
+                objective: users[i].objective
+            }, null, 5));
+        }
+    }
+}
+
 
 //PUT change objective goal
-//app.put('/users/:todo_id/newGoal', users.changeGoal);
+router.changeGoal = (req, res) => {
+    for (let i = 0; i < users.length; i++) {
+        var objective = getByObjectiveValue(users[i].objectives, req.params.todo_id);
+        if (objective == null) {
+            if (i == users.length - 1) {
+                res.send("Error: ID Not Found");
+            }
+            else
+                continue;
+        } else {
+            users[i].objectives.goal = req.body.goal;
+            res.setHeader('Content-Type', 'application/json');
+            res.send(JSON.stringify({
+                status: 200,
+                message: "Change Successful",
+                objective: users[i].objective
+            }, null, 5));
+        }
+    }
+}
 
 //PUT change objective location
-//app.put('/users/:todo_id/newLocation', users.changeLocation);
+router.changeLocation = (req, res) => {
+    for (let i = 0; i < users.length; i++) {
+        var objective = getByObjectiveValue(users[i].objectives, req.params.todo_id);
+        if (objective == null) {
+            if (i == users.length - 1) {
+                res.send("Error: ID Not Found");
+            }
+            else
+                continue;
+        } else {
+            users[i].objectives.location = req.body.location;
+            res.setHeader('Content-Type', 'application/json');
+            res.send(JSON.stringify({
+                status: 200,
+                message: "Change Successful",
+                objective: users[i].objective
+            }, null, 5));
+        }
+    }
+}
 
 //PUT like objective
-//app.put('/users/:todo_id/support', users.likeObjective);
+router.likeObjective = (req, res) => {
+    for (let i = 0; i < users.length; i++) {
+        var objective = getByObjectiveValue(users[i].objectives, req.params.todo_id);
+        if (objective == null) {
+            if (i == users.length - 1) {
+                res.send("Error: ID Not Found");
+            }
+            else
+                continue;
+        } else {
+            users[i].objective.likes += 1;
+            res.setHeader('Content-Type', 'application/json');
+            res.send(JSON.stringify({
+                status: 200,
+                message: "Upvote Successful",
+                objective: users[i].objective
+            }, null, 5));
+        }
+    }
+}
+*/
 
 //DELETE objective
 router.deleteObjective = (req, res) => {

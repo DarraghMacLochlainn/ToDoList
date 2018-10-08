@@ -36,12 +36,13 @@ app.post('/users/profile', users.addUser);
 app.post('/users/:user_id', users.addObjective);
 
 //PUT
-//app.put('/users/profile/:user_id/newName', users.changeUsername);
-//app.put('/users/objective/:todo_id/newTime', users.changeTime);
-//app.put('/users/objective/:todo_id/newGoal', users.changeGoal);
-//app.put('/users/objective/:todo_id/newLocation', users.changeLocation);
-//app.put('/users/objective/:todo_id/support', users.likeObjective);
-
+/*
+app.put('/users/profile/:user_id/newName', users.changeUsername);
+app.put('/users/objective/:todo_id/newTime', users.changeTime);
+app.put('/users/objective/:todo_id/newGoal', users.changeGoal);
+app.put('/users/objective/:todo_id/newLocation', users.changeLocation);
+app.put('/users/objective/:todo_id/support', users.likeObjective);
+*/
 //DELETE
 app.delete('/users/objective/:todo_id', users.deleteObjective);
 app.delete('/users/profile/:user_id', users.deleteUser);
