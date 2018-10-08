@@ -21,47 +21,30 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 
-//get users
-//app.get('/users', users.findAllUsers);
-//app.get('/users/:user_id', users.findOneUsers);
-
-//get users and objectives
+//GET
 app.get('/users', users.findAll);
+app.get('/users/objective', users.findAllObjectives);
+app.get('/users/profile', users.findAllUsers);
+
 app.get('/users/:user_id', users.findOne);
+app.get('/users/profile/:user_id/', users.findOneUser);
+app.get('/users/objective/:user_id', users.findOneObjective);
 
-//get objectives
-//app.get('/users', users.findAllObjectives);
-//app.get('/users/:todo_id', users.findOneObjective);
-
-//add users without objectives
-//app.post('/users', users.addUser);
-
-//add users with objectives
+//POST
 app.post('/users', users.addUserAndObjective);
+app.post('/users/profile', users.addUser);
+app.post('/users/:user_id', users.addObjective);
 
-//add objectives to users
-//app.post('/users', users.addObjective);
+//PUT
+//app.put('/users/profile/:user_id/newName', users.changeUsername);
+//app.put('/users/objective/:todo_id/newTime', users.changeTime);
+//app.put('/users/objective/:todo_id/newGoal', users.changeGoal);
+//app.put('/users/objective/:todo_id/newLocation', users.changeLocation);
+//app.put('/users/objective/:todo_id/support', users.likeObjective);
 
-//change user name
-//app.put('/users/:user_id/newName', users.changeUsername);
-
-//change objective time
-//app.put('/users/:todo_id/newTime', users.changeTime);
-
-//change objective goal
-//app.put('/users/:todo_id/newGoal', users.changeGoal);
-
-//change objective location
-//app.put('/users/:todo_id/newLocation', users.changeLocation);
-
-//like objective
-//app.put('/users/:todo_id/support', users.likeObjective);
-
-//delete objective
-//app.delete('/users/:todo_id', users.deleteObjective);
-
-//delete user
-app.delete('/users/:user_id', users.deleteUser);
+//DELETE
+app.delete('/users/objective/:todo_id', users.deleteObjective);
+app.delete('/users/profile/:user_id', users.deleteUser);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
