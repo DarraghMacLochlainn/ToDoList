@@ -1,0 +1,13 @@
+{
+  "user_id": 1000001,
+  "username": "Frank Sinatra",
+  "objectives": [
+    {
+      "todo_id": 1000001,
+      "time": "11:00",
+      "location": "65 Water Street",
+      "likes": 46,
+      "goal": "Exercise"
+    }
+  ]
+}

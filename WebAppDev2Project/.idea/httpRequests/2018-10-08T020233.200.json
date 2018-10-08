@@ -1,0 +1,13 @@
+{
+  "user_id": 1000002,
+  "username": "Hugh Mann",
+  "objectives": [
+    {
+      "todo_id": 1000002,
+      "time": "10:00",
+      "location": "The Tower, Waterford",
+      "likes": 13,
+      "goal": "Skateboards"
+    }
+  ]
+}
