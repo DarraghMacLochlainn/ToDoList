@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var users = require('./routes/users');
+let mongoose = require('mongoose');
 
 var app = express();
 
@@ -26,26 +27,39 @@ app.get('/users', users.findAll);
 app.get('/users/objective', users.findAllObjectives);
 app.get('/users/profile', users.findAllUsers);
 
-app.get('/users/:user_id', users.findOne);
-app.get('/users/profile/:user_id/', users.findOneUser);
-app.get('/users/objective/:user_id', users.findOneObjective);
+app.get('/users/:id', users.findOne);
+app.get('/users/profile/:id/', users.findOneUser);
+app.get('/users/objective/:id', users.findOneObjective);
 
 //POST
 app.post('/users', users.addUserAndObjective);
 app.post('/users/profile', users.addUser);
-app.post('/users/:user_id', users.addObjective);
+app.post('/users/:id', users.addObjective);
 
 //PUT
 /*
-app.put('/users/profile/:user_id/newName', users.changeUsername);
-app.put('/users/objective/:todo_id/newTime', users.changeTime);
-app.put('/users/objective/:todo_id/newGoal', users.changeGoal);
-app.put('/users/objective/:todo_id/newLocation', users.changeLocation);
-app.put('/users/objective/:todo_id/support', users.likeObjective);
+app.put('/users/profile/:_id/newName', users.changeUsername);
+app.put('/users/objective/:_id/newTime', users.changeTime);
+app.put('/users/objective/:_id/newGoal', users.changeGoal);
+app.put('/users/objective/:_id/newLocation', users.changeLocation);
+app.put('/users/objective/:_id/support', users.likeObjective);
 */
+
 //DELETE
-app.delete('/users/objective/:todo_id', users.deleteObjective);
-app.delete('/users/profile/:user_id', users.deleteUser);
+app.delete('/users/objective/:_id', users.deleteObjective);
+app.delete('/users/profile/:_id', users.deleteUser);
+
+mongoose.connect('mongodb://localhost:27017/TODOdb');
+
+let db = mongoose.connection;
+
+db.on('error', function (err) {
+    console.log('Unable to Connect to [ ' + db.name + ' ]', err);
+});
+
+db.once('open', function () {
+    console.log('Successfully Connected to [ ' + db.name + ' ]');
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

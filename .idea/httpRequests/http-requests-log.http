@@ -1,348 +1,256 @@
-POST http://localhost:3000/users/
+DELETE http://localhost:3000/users/profile/6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"username":"Funny Valentime","objectives":{"time": "18:00", "goal": "Become President"}}
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T111013.200.html
+<> 2018-10-19T015105.200.html
 
 ###
 
-POST http://localhost:3000/users/
+DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"username":"Funny Valentime","objectives":{, "time": "18:00", "goal": "Become President"}}
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T111002.400.html
+<> 2018-10-19T014720-1.200.html
 
 ###
 
-POST http://localhost:3000/users/
+DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "goal": "Become President"}}
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T110929.200.html
+<> 2018-10-19T014720.200.html
 
 ###
 
-POST http://localhost:3000/users/
+DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "goal": "Become President"}}
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+
+<> 2018-10-19T014718.200.html
 
 ###
 
-POST http://localhost:3000/users/
+GET http://localhost:3000/users
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "goal": "Become President"}}
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+
+<> 2018-10-19T014701.200.json
 
 ###
 
-POST http://localhost:3000/users/
+DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "goal": "Become President"}}
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T110759.500.html
+<> 2018-10-19T014655.200.html
 
 ###
 
-GET http://localhost:3000/users/
+DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "goal": "Become President"}}
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T110756.200.json
+<> 2018-10-19T014653.200.html
 
 ###
 
-GET http://localhost:3000/users/
+DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "goal": "Become President"}}
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T110713.200.json
+<> 2018-10-19T014651.200.html
 
 ###
 
-POST http://localhost:3000/users/
+DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "goal": "Become President"}}
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T110710.200.json
+<> 2018-10-19T014538.200.html
 
 ###
 
-GET http://localhost:3000/users/
+DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "goal": "Become President"}}
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T110703.200.json
+<> 2018-10-19T014534.200.html
 
 ###
 
-GET http://localhost:3000/users/
+DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "likes": 0, "goal": "Become President"}}
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T110634.200.json
+<> 2018-10-19T014525.200.html
 
 ###
 
-POST http://localhost:3000/users/
+DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "likes": 0, "goal": "Become President"}}
-
-<> 2018-10-08T110632.200.json
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
 ###
 
-GET http://localhost:3000/users/
+DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "likes": 0, "goal": "Become President"}}
-
-<> 2018-10-08T110627.200.json
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
 ###
 
-GET http://localhost:3000/users/
+GET http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"username":"Funny Valentime","objectives":{"time": "18:00", "likes": 0, "goal": "Become President"}}
-
-<> 2018-10-08T110519.200.json
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
 ###
 
-POST http://localhost:3000/users/
+GET http://localhost:3000/users
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"username":"Funny Valentime","objectives":{"time": "18:00", "likes": 0, "goal": "Become President"}}
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T110515.200.json
+<> 2018-10-18T110944.200.json
 
 ###
 
-GET http://localhost:3000/users/
+DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "likes": 0, "goal": "Become President"}}
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T110432.200.json
+<> 2018-10-18T110930.200.html
 
 ###
 
-POST http://localhost:3000/users/
+GET http://localhost:3000/users
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", "likes": 0, "goal": "Become President"}}
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T110427.200.json
+<> 2018-10-18T110903.200.json
 
 ###
 
-POST http://localhost:3000/users/
+GET http://localhost:3000/users
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": "18:00", 'likes': 0, "goal": "Become President"}}
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T110358.400.html
+<> 2018-10-18T110617.200.json
 
 ###
 
-POST http://localhost:3000/users/
+DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"}}
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T110242.400.html
+<> 2018-10-18T110608.200.html
 
 ###
 
-POST http://localhost:3000/users/
+GET http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"user_id":0,"username":"Funny Valentime","objectives":{[{"todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"}]}}
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T110231.400.html
+<> 2018-10-18T110559.500.html
 
 ###
 
-POST http://localhost:3000/users/
+GET http://localhost:3000/users
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"user_id":0,"username":"Funny Valentime","objectives":["todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"]}
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T110218.400.html
+<> 2018-10-18T110459.200.json
 
 ###
 
-POST http://localhost:3000/users/
+PUT http://localhost:3000/users/objective/5bc6491063f56c1b54f6dcfd/support
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"user_id":0,"username":"Funny Valentime","objectives":[{"todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"}]}
-
-<> 2018-10-08T110120.400.html
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
 ###
 
-POST http://localhost:3000/users/
+PUT http://localhost:3000/users/objective/5bc6491063f56c1b54f6dcfc/support
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"user_id":0,"username":"Funny Valentime","objectives":"[{"todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"}]"}
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T110023.400.html
+<> 2018-10-18T105827.200.html
 
 ###
 
-POST http://localhost:3000/users/
+GET http://localhost:3000/users/5bc6491063f56c1b54f6dcfc
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"user_id":0,"username":"Funny Valentime","objectives"[{"todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"}]}
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T110004.400.html
-
-###
-
-POST http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"user_id":0,"username":"Funny Valentime","objectives":[{"todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"}]}
-
-<> 2018-10-08T105921.400.html
-
-###
-
-POST http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"user_id":0,"username":"Funny Valentime","objectives":[{"todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"}]
-
-<> 2018-10-08T105907.400.html
-
-###
-
-POST http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"user_id":0,"username":"Funny Valentime","objectives":["todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"]
-
-<> 2018-10-08T105851.400.html
-
-###
-
-POST http://localhost:3000/users/profile/1000000
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"user_id":0,"username":"Funny Valentime","objectives":["todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"]
-
-<> 2018-10-08T105845.400.html
-
-###
-
-POST http://localhost:3000/users/profile/1000000
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"user_id":0,"username":"Funny Valentime","objectives":[{"todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"}]
-
-<> 2018-10-08T105811.400.html
-
-###
-
-POST http://localhost:3000/users/profile/1000000
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"user_id":0,"username":"Funny Valentime","objectives":{"todo_id": 0, "time": 18:00, 'likes': 0, "goal": "Become President"}
-
-<> 2018-10-08T105759.400.html
-
-###
-
-PUT http://localhost:3000/users/profile/1000000
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-username:"Funny Valentime"
-
-<> 2018-10-08T105503.400.html
-
-###
-
-POST http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-username:"Funny Valentime"
-
-<> 2018-10-08T105454.400.html
+<> 2018-10-18T105810.200.json
 
 ###
 
@@ -351,9 +259,60 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-username:"Funny Valentime"
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T105448.400.html
+<> 2018-10-18T105753.200.json
+
+###
+
+GET http://localhost:3000/users/5bc6491063f56c1b54f6dcfd
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+
+<> 2018-10-18T105746.200.json
+
+###
+
+GET http://localhost:3000/users/objective/5bc6491063f56c1b54f6dcfd
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+
+<> 2018-10-18T105711.500.html
+
+###
+
+PUT http://localhost:3000/users/objective/5bc6491063f56c1b54f6dcfd/support
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+
+###
+
+PUT http://localhost:3000/users/objective/5bc6491063f56c1b54f6dcfd/support
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+
+###
+
+GET http://localhost:3000/users/objective/5bc6491063f56c1b54f6dcfd/support
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+
+<> 2018-10-18T105342.404.html
 
 ###
 
@@ -362,7 +321,9 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2018-10-08T105436.200.json
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+
+<> 2018-10-18T105314.200.json
 
 ###
 
@@ -371,9 +332,20 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-"username":"Funny Valentime"
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T105419.400.html
+<> 2018-10-16T092452.200.json
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+
+<> 2018-10-16T092449.200.json
 
 ###
 
@@ -382,20 +354,9 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-"username":"Funny Valentime"
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T105418.400.html
-
-###
-
-GET http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-"username":"Funny Valentime"
-
-<> 2018-10-08T105409.400.html
+<> 2018-10-16T092446.200.json
 
 ###
 
@@ -404,9 +365,20 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-"username":"Funny Valentime"
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T105329.400.html
+<> 2018-10-16T092342.200.json
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+
+<> 2018-10-16T092339.200.json
 
 ###
 
@@ -415,20 +387,9 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-"username":"Funny Valentime"
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T105236.400.html
-
-###
-
-GET http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-"username":"Funny Valentime"
-
-<> 2018-10-08T105203.400.html
+<> 2018-10-16T092334.200.json
 
 ###
 
@@ -437,90 +398,135 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-"username":"Funny Valentime"
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T105156.400.html
+<> 2018-10-16T090341.200.json
 
 ###
 
-PUT http://localhost:3000/users/profile/1000000/newName
+POST http://localhost:3000/users/
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-"username":"Funny Valentime"
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
 
-<> 2018-10-08T105150.400.html
+<> 2018-10-16T090332.200.json
 
 ###
 
-PUT http://localhost:3000/users/profile/1000000/newName
+POST http://localhost:3000/users/
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-"username":"Funny Valentime"
+{"username":"Funny Valentime","todo_id":"1"}
 
-<> 2018-10-08T105139.400.html
+<> 2018-10-16T090213.200.json
 
 ###
 
-GET http://localhost:3000/users/
+POST http://localhost:3000/users/
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2018-10-08T105044.200.json
+{"username":"Funny Valentime","todo_id":"1"}
 
 ###
 
-GET http://localhost:3000/users/
+POST http://localhost:3000/users/
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2018-10-08T094210.200.json
+{"username":"Funny Valentime","todo_id":"1"}
 
 ###
 
-DELETE http://localhost:3000/users/objective/1000003
+POST http://localhost:3000/users/
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2018-10-08T094204.200.json
+{"username":"Funny Valentime","todo_id":"1"}
 
 ###
 
-DELETE http://localhost:3000/users/objective/100003
+POST http://localhost:3000/users/
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2018-10-08T094201.200.html
+{"username":"Funny Valentime","todo_id":"1"}
+
+<> 2018-10-16T085942.200.json
 
 ###
 
-DELETE http://localhost:3000/users/objective/100
+POST http://localhost:3000/users/
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2018-10-08T094156.200.html
+{"username":"Funny Valentime","todo_id":"1"}
+
+<> 2018-10-16T085844.200.json
 
 ###
 
-DELETE http://localhost:3000/users/objective/100
+POST http://localhost:3000/users/
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+
+<> 2018-10-16T085517.200.json
+
 ###
 
-DELETE http://localhost:3000/users/objective/100
+POST http://localhost:3000/users/
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
+
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+
+<> 2018-10-16T085446.200.json
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+
+<> 2018-10-16T085431.200.json
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+
+<> 2018-10-16T085311.200.json
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+
+<> 2018-10-16T085120.500.json
 
 ###
 

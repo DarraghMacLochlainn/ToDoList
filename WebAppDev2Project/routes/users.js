@@ -1,18 +1,13 @@
-let users = require('../models/users');
 var express = require('express');
 var router = express.Router();
+var User = require('../models/users');
+
 
 /* GET users listing. */
 router.get('/', function (req, res, next) {
     res.send('respond with a resource');
 });
 
-function getByUserValue(array, id) {
-    var result = array.filter(function (obj) {
-        return obj.user_id == id;
-    });
-    return result ? result[0] : null; // or undefined
-}
 
 function getByObjectiveValue(array, id) {
     var result = array.filter(function (obj) {
@@ -25,18 +20,25 @@ function getByObjectiveValue(array, id) {
 router.findAll = (req, res) => {
     // Return a JSON representation of our list
     res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify(users, null, 5));
+
+    User.find(function (err, users) {
+        if (err)
+            res.send(err);
+
+        res.send(JSON.stringify(users, null, 5));
+    });
 }
 
 router.findOne = (req, res) => {
-    var user = getByValue(users, req.params.user_id);
 
-    if (user != null) {
-        res.setHeader('Content-Type', 'application/json');
-        res.send(JSON.stringify(user, null, 5));
-    } else {
-        res.json("Error: ID not found");
-    }
+    res.setHeader('Content-Type', 'application/json');
+
+    User.find({"_id": req.params.id}, function (err, user) {
+        if (err)
+            res.send(JSON.stringify(err, null, 5));
+        else
+            res.send(JSON.stringify(user, null, 5));
+    });
 }
 
 //GET all users WITHOUT their objectives
@@ -86,20 +88,26 @@ router.findOneObjective = (req, res) => {
 
 //POST user and objective
 router.addUserAndObjective = (req, res) => {
-    //Add a new user to our list
-    var user_id = Math.floor((Math.random() * 1000000) + 1); //Randomly generate an id
-    var todo_id = Math.floor((Math.random() * 1000000) + 1); //Randomly generate an id
-    var currentSize = users.length;
 
-    users.push({
-        "user_id": user_id, "username": req.body.username, "objectives": [
-            {"todo_id": todo_id, "time": req.body.time, 'likes': 0, "goal": req.body.goal}]
+    res.setHeader('Content-Type', 'application/json');
+
+    var user = new User();
+
+    user.username = req.body.username,
+        user.objectives = [{
+            todo_id: req.body.todo_id,
+            time: req.body.time,
+            location: req.body.location,
+            likes: 0,
+            goal: req.body.goal
+        }]
+
+    user.save(function (err) {
+        if (err)
+            res.send(JSON.stringify(err, null, 5));
+        else
+            res.send(JSON.stringify(user, null, 5));
     });
-
-    if ((currentSize + 1) == users.length)
-        res.send(JSON.stringify({message: 'User Added!',users}, null, 5));
-    else
-        res.json({message: 'User NOT Added!'});
 }
 
 //POST user without objective
@@ -137,7 +145,7 @@ router.addObjective = (req, res) => {
     }
 }
 
-/*
+
 //PUT change user name
 router.changeUsername = (req, res) => {
     var user = getByValue(users, req.params.user_id);
@@ -152,6 +160,7 @@ router.changeUsername = (req, res) => {
 }
 
 //PUT change objective time
+/*
 router.changeTime = (req, res) => {
     for (let i = 0; i < users.length; i++) {
         var objective = getByObjectiveValue(users[i].objectives, req.params.todo_id);
@@ -220,26 +229,22 @@ router.changeLocation = (req, res) => {
 
 //PUT like objective
 router.likeObjective = (req, res) => {
-    for (let i = 0; i < users.length; i++) {
-        var objective = getByObjectiveValue(users[i].objectives, req.params.todo_id);
-        if (objective == null) {
-            if (i == users.length - 1) {
-                res.send("Error: ID Not Found");
-            }
-            else
-                continue;
-        } else {
-            users[i].objective.likes += 1;
-            res.setHeader('Content-Type', 'application/json');
-            res.send(JSON.stringify({
-                status: 200,
-                message: "Upvote Successful",
-                objective: users[i].objective
-            }, null, 5));
+
+    User.findById(req.params._id, function(err,objective) {
+        if (err)
+            res.send(JSON.stringify(err, null, 5));
+        else {
+            objective.likes += 1;
+            objective.save(function (err) {
+                if (err)
+                    res.send(JSON.stringify(err, null, 5));
+                else
+                    res.send(JSON.stringify({Message:"Like Successful",objective}, null, 5));
+            });
         }
-    }
-}
-*/
+    });
+}*/
+
 
 //DELETE objective
 router.deleteObjective = (req, res) => {
@@ -275,21 +280,12 @@ router.deleteUser = (req, res) => {
 
     // First, find the relevant user to delete
     // Next, find it's position in the list of users
-    var currentSize = users.length;
-    var user = getByUserValue(users, req.params.user_id);
-    if (user == null) {
-        res.send("Error: ID Not Found");
-    } else {
-        var index = users.indexOf(user);
-        // Then use users.splice(index, 1) to remove it from the list
-        users.splice(index, 1);
-
-        // Return a message to reflect success or failure of delete operation
-        if ((currentSize - 1) == users.length)
-            res.json({message: 'User Deleted!'});
+    User.findByIdAndRemove(req.params._id, function (err) {
+        if (err)
+            res.send(JSON.stringify({message: 'To Do Not Deleted', err}, null, 5));
         else
-            res.json({message: 'User NOT Deleted!'});
-    }
+            res.send(JSON.stringify({Message: "To DO Deleted"}, null, 5));
+    });
 }
 
 module.exports = router;
