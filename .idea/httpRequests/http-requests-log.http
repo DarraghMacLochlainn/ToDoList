@@ -1,44 +1,49 @@
-DELETE http://localhost:3000/users/profile/6
+GET http://localhost:3000/users/
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-19T015105.200.html
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
 
 ###
 
-DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
+DELETE http://localhost:3000/objectives/5bcd08b78cc2eb137c0959e0
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-19T014720-1.200.html
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
 
 ###
 
-DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
+DELETE http://localhost:3000/objectives/5bcd08b78cc2eb137c0959e0
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-19T014720.200.html
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
 
 ###
 
-DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
+GET http://localhost:3000/users/
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
 
-<> 2018-10-19T014718.200.html
+<> 2018-10-22T115436.200.json
+
+###
+
+GET http://localhost:3000/users/5bcd08b78cc2eb137c0959e0
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T115432.200.json
 
 ###
 
@@ -47,102 +52,42 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
 
-<> 2018-10-19T014701.200.json
+<> 2018-10-22T115335.200.json
 
 ###
 
-DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
+DELETE http://localhost:3000/objectives/5bcd08b78cc2eb137c0959e0
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
 
-<> 2018-10-19T014655.200.html
+<> 2018-10-22T115330.200.html
 
 ###
 
-DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
+DELETE http://localhost:3000/objectives/5bcd08b78cc2eb137c0959e0
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
 
-<> 2018-10-19T014653.200.html
+<> 2018-10-22T115329.200.html
 
 ###
 
-DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
+DELETE http://localhost:3000/objectives/5bcd08b78cc2eb137c0959e0
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
 
-<> 2018-10-19T014651.200.html
-
-###
-
-DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-19T014538.200.html
-
-###
-
-DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-19T014534.200.html
-
-###
-
-DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-19T014525.200.html
-
-###
-
-DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-###
-
-DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-###
-
-GET http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+<> 2018-10-22T115320.200.html
 
 ###
 
@@ -151,20 +96,192 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
 
-<> 2018-10-18T110944.200.json
+<> 2018-10-22T115307.200.json
 
 ###
 
-DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
+GET http://localhost:3000/objectives/5bcd07efac543a1d709e75d2
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
 
-<> 2018-10-18T110930.200.html
+###
+
+GET http://localhost:3000/objectives/5bcd07efac543a1d709e75d2
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T114704.200.json
+
+###
+
+GET http://localhost:3000/users/5bcd08b78cc2eb137c0959e0
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T114701.200.json
+
+###
+
+DELETE http://localhost:3000/users/5bcd08b78cc2eb137c0959e0
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T114657.200.html
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T114640.200.json
+
+###
+
+DELETE http://localhost:3000/objectives/5bcd08b78cc2eb137c0959e0
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T114633.200.html
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T114602.200.json
+
+###
+
+GET http://localhost:3000/objectives/5bcd1557da28be08a027c3e6
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T114554.404.html
+
+###
+
+DELETE http://localhost:3000/objectives/5bcd1557da28be08a027c3e6
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T114547.200.html
+
+###
+
+GET http://localhost:3000/objectives/5bcd1557da28be08a027c3e6
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T114536.404.html
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T114510.200.json
+
+###
+
+GET http://localhost:3000/users/5bcd09445624d71518a4fcdf
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T114450.200.json
+
+###
+
+GET http://localhost:3000/users/5bcd09445624d71518a4fcdf
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T114413.200.json
+
+###
+
+GET http://localhost:3000/users/5bcd09445624d71518a4fcdf
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T114254.200.json
+
+###
+
+DELETE http://localhost:3000/users/5bcd09445624d71518a4fcdf
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T114248.200.html
+
+###
+
+DELETE http://localhost:3000/users/5bcd09445624d71518a4fcdf
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T114246.200.html
 
 ###
 
@@ -173,9 +290,201 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
 
-<> 2018-10-18T110903.200.json
+<> 2018-10-22T114212.200.json
+
+###
+
+POST http://localhost:3000/objectives/5bcd09445624d71518a4fcdf
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T114154.200.json
+
+###
+
+POST http://localhost:3000/objectives/5bcd09445624d71518a4fcdf
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T114149.200.json
+
+###
+
+POST http://localhost:3000/objectives/5bcd09445624d71518a4fcdf
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T114033.200.json
+
+###
+
+POST http://localhost:3000/objectives/5bcd09445624d71518a4fcdf
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T113957.200.json
+
+###
+
+POST http://localhost:3000/objectives/5bcd09445624d71518a4fcdf
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T113951.200.json
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T113903.200.json
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T021334.200.json
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T020501.200.json
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T020307.200.json
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T020217.200.json
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T020022.200.json
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+###
+
+GET http://localhost:3000/objectives/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T015942.200.json
+
+###
+
+GET http://localhost:3000/objectives/5bcd07efac543a1d709e75d2
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T015807.200.json
+
+###
+
+GET http://localhost:3000/objectives/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T015801.200.json
+
+###
+
+POST http://localhost:3000/objectives/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+###
+
+POST http://localhost:3000/objectives/5bcd09445624d71518a4fcdf
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-22T015612.200.json
 
 ###
 
@@ -184,349 +493,40 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
 
-<> 2018-10-18T110617.200.json
+<> 2018-10-22T015554.200.json
 
 ###
 
-DELETE http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
+PUT http://localhost:3000/users/5bcd1975d95ac616b81b6f6f/newName
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
 
-<> 2018-10-18T110608.200.html
+<> 2018-10-22T015356.200.html
 
 ###
 
-GET http://localhost:3000/users/profile/5bc648cbba883116fc88d43a
+PUT http://localhost:3000/users/5bcd1975d95ac616b81b6f6f/newName
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-18T110559.500.html
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
 
 ###
 
-GET http://localhost:3000/users
+PUT http://localhost:3000/objectives/5bcd1975d95ac616b81b6f6f/newGoal
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
+{"username":"David Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
 
-<> 2018-10-18T110459.200.json
-
-###
-
-PUT http://localhost:3000/users/objective/5bc6491063f56c1b54f6dcfd/support
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-###
-
-PUT http://localhost:3000/users/objective/5bc6491063f56c1b54f6dcfc/support
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-18T105827.200.html
-
-###
-
-GET http://localhost:3000/users/5bc6491063f56c1b54f6dcfc
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-18T105810.200.json
-
-###
-
-GET http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-18T105753.200.json
-
-###
-
-GET http://localhost:3000/users/5bc6491063f56c1b54f6dcfd
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-18T105746.200.json
-
-###
-
-GET http://localhost:3000/users/objective/5bc6491063f56c1b54f6dcfd
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-18T105711.500.html
-
-###
-
-PUT http://localhost:3000/users/objective/5bc6491063f56c1b54f6dcfd/support
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-###
-
-PUT http://localhost:3000/users/objective/5bc6491063f56c1b54f6dcfd/support
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-###
-
-GET http://localhost:3000/users/objective/5bc6491063f56c1b54f6dcfd/support
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-18T105342.404.html
-
-###
-
-GET http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-18T105314.200.json
-
-###
-
-GET http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-16T092452.200.json
-
-###
-
-POST http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-16T092449.200.json
-
-###
-
-GET http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-16T092446.200.json
-
-###
-
-GET http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-16T092342.200.json
-
-###
-
-POST http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-16T092339.200.json
-
-###
-
-GET http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-16T092334.200.json
-
-###
-
-GET http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-16T090341.200.json
-
-###
-
-POST http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-16T090332.200.json
-
-###
-
-POST http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1"}
-
-<> 2018-10-16T090213.200.json
-
-###
-
-POST http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1"}
-
-###
-
-POST http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1"}
-
-###
-
-POST http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1"}
-
-###
-
-POST http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1"}
-
-<> 2018-10-16T085942.200.json
-
-###
-
-POST http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1"}
-
-<> 2018-10-16T085844.200.json
-
-###
-
-POST http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-16T085517.200.json
-
-###
-
-POST http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-16T085446.200.json
-
-###
-
-POST http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-16T085431.200.json
-
-###
-
-POST http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-16T085311.200.json
-
-###
-
-POST http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Funny Valentime","todo_id":"1","time":"9 in the afternoon","location":"USA","goal":"Become President"}
-
-<> 2018-10-16T085120.500.json
+<> 2018-10-22T015215.200.html
 
 ###
 

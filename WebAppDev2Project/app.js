@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var users = require('./routes/users');
+var objectives = require('./routes/objectives');
 let mongoose = require('mongoose');
 
 var app = express();
@@ -24,32 +25,27 @@ app.use('/', indexRouter);
 
 //GET
 app.get('/users', users.findAll);
-app.get('/users/objective', users.findAllObjectives);
-app.get('/users/profile', users.findAllUsers);
-
 app.get('/users/:id', users.findOne);
-app.get('/users/profile/:id/', users.findOneUser);
-app.get('/users/objective/:id', users.findOneObjective);
 
 //POST
-app.post('/users', users.addUserAndObjective);
-app.post('/users/profile', users.addUser);
-app.post('/users/:id', users.addObjective);
+app.post('/users/profile', users.addUserAndObjective);
+app.post('/users/', users.addUser);
+app.post('/objectives/:_id', objectives.addObjective);
 
 //PUT
-/*
-app.put('/users/profile/:_id/newName', users.changeUsername);
-app.put('/users/objective/:_id/newTime', users.changeTime);
-app.put('/users/objective/:_id/newGoal', users.changeGoal);
-app.put('/users/objective/:_id/newLocation', users.changeLocation);
-app.put('/users/objective/:_id/support', users.likeObjective);
-*/
+app.put('/users/:_id/newName', users.changeUsername);
+app.put('/objectives/:_id/newTime', objectives.changeTime);
+app.put('/objectives/:_id/newGoal', objectives.changeGoal);
+app.put('/objectives/:_id/newLocation', objectives.changeLocation);
+app.put('/objectives/:_id/support', objectives.likeObjective);
+
 
 //DELETE
-app.delete('/users/objective/:_id', users.deleteObjective);
-app.delete('/users/profile/:_id', users.deleteUser);
+app.delete('/objectives/:_id/:todo_id', objectives.deleteObjective);
+app.delete('/users/:_id', users.deleteUser);
 
-mongoose.connect('mongodb://localhost:27017/TODOdb');
+var mongodbUri ='mongodb://tododbuser:tododb1@ds137913.mlab.com:37913/tododb';
+mongoose.connect(mongodbUri);
 
 let db = mongoose.connection;
 
