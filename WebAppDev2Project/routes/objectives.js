@@ -116,15 +116,32 @@ router.deleteObjective = (req, res) => {
     //Delete the selected user based on its id
     // First, find the relevant user to delete
     // Next, find it's position in the list of users
-    User.findById(req.params._id, function (err, user) {
+    //Delete the selected user based on its id
+    // First, find the relevant user to delete
+    // Next, find it's position in the list of users
+    res.setHeader('Content-Type', 'application/json');
+    user = findU
+    objective.findByIdAndRemove(req.params._id2, function (err) {
+        if (err)
+            res.send(JSON.stringify({message: 'To Do Not Deleted', err}, null, 5));
+        else
+            res.send(JSON.stringify({Message: "To DO Deleted"}, null, 5));
+    });
+
+    //mongo db resources sql like commands,
+    //refernces mongo multiple collections query example
+    //ref
+    //mongo ref example
+    //.populate call
+}
+
+router.findUser = (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
+    User.find({"_id": req.params.id}, function (err, user) {
         if (err)
             res.send(JSON.stringify(err, null, 5));
         else
-            for (let objective in user.objectives) {
-                if(objective.todo_id == req.params.todo_id){
-                    user.objectives.pop(objective);
-                }
-            }
+
     });
 }
 

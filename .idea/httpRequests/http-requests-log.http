@@ -1,3 +1,54 @@
+DELETE http://localhost:3000/objectives/5bcd07efac543a1d709e75d2/5bcd08b78cc2eb137c0959e0
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+###
+
+GET http://localhost:3000/users
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-26T043710.200.json
+
+###
+
+DELETE http://localhost:3000/objectives/5bcd08b78cc2eb137c0959e0
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-26T043650.200.json
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-10-26T043632.200.json
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+###
+
 GET http://localhost:3000/users/
 Accept: */*
 Cache-Control: no-cache
@@ -474,59 +525,6 @@ Cache-Control: no-cache
 Content-Type: application/json
 
 {"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
-
-###
-
-POST http://localhost:3000/objectives/5bcd09445624d71518a4fcdf
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
-
-<> 2018-10-22T015612.200.json
-
-###
-
-GET http://localhost:3000/users
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
-
-<> 2018-10-22T015554.200.json
-
-###
-
-PUT http://localhost:3000/users/5bcd1975d95ac616b81b6f6f/newName
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
-
-<> 2018-10-22T015356.200.html
-
-###
-
-PUT http://localhost:3000/users/5bcd1975d95ac616b81b6f6f/newName
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
-
-###
-
-PUT http://localhost:3000/objectives/5bcd1975d95ac616b81b6f6f/newGoal
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"David Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
-
-<> 2018-10-22T015215.200.html
 
 ###
 
