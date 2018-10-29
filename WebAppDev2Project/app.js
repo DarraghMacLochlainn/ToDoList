@@ -26,22 +26,27 @@ app.use('/', indexRouter);
 //GET
 app.get('/users', users.findAll);
 app.get('/users/:id', users.findOne);
+app.get('/objectives', objectives.findAll);
+app.get('/objectives/:id', objectives.findOne);
+app.get('/users/:id/profile', users.findUserAndObjectives);
+app.get('/objectives/:user_id/profile', objectives.findObjectives);
 
 //POST
-app.post('/users/profile', users.addUserAndObjective);
 app.post('/users/', users.addUser);
-app.post('/objectives/:_id', objectives.addObjective);
+app.post('/objectives/', objectives.addObjective);
 
 //PUT
-app.put('/users/:_id/newName', users.changeUsername);
-app.put('/objectives/:_id/newTime', objectives.changeTime);
-app.put('/objectives/:_id/newGoal', objectives.changeGoal);
-app.put('/objectives/:_id/newLocation', objectives.changeLocation);
-app.put('/objectives/:_id/support', objectives.likeObjective);
+app.put('/users/:_id/Name', users.changeUsername);
+app.put('/users/:_id/Password', users.changeUserPassword);
+app.put('/users/:_id/Email', users.changeUserEmail);
+app.put('/objectives/:_id/Time', objectives.changeTime);
+app.put('/objectives/:_id/Goal', objectives.changeGoal);
+app.put('/objectives/:_id/Location', objectives.changeLocation);
+app.put('/objectives/:_id/Like', objectives.likeObjective);
 
 
 //DELETE
-app.delete('/objectives/:_id1/:_id2', objectives.deleteObjective);
+app.delete('/objectives/:_id/', objectives.deleteObjective);
 app.delete('/users/:_id', users.deleteUser);
 
 var mongodbUri ='mongodb://tododbuser:tododb1@ds137913.mlab.com:37913/tododb';

@@ -1,9 +1,9 @@
 let express = require('express');
 let router = express.Router();
 let User = require('../models/users');
-let Objective = require('../models/objectives');
+var Objective = require('../models/objectives');
 
-//GET all users and their objectives
+//GET all users
 router.findAll = (req, res) => {
     // Return a JSON representation of our list
     res.setHeader('Content-Type', 'application/json');
@@ -27,46 +27,49 @@ router.findOne = (req, res) => {
     });
 }
 
-//POST user and objective
-//WORKING
-router.addUserAndObjective = (req, res) => {
-
+//get all users and their objectives
+router.findAll = (req, res) => {
+    // Return a JSON representation of our list
     res.setHeader('Content-Type', 'application/json');
-
-    var user = new User();
-    var todo_id = Math.floor((Math.random() * 1000000) + 1);
-
-    let objective = new Objective();
-
-    objective.todo_id = todo_id,
-        objective.time = req.body.time,
-        objective.location = req.body.location,
-        objective.goal = req.body.goal,
-        objective.likes = 0
-
-    user.username = req.body.username,
-        user.objectives = objective;
-    objective.save(function(err) {
+    User.find(function (err, users) {
         if (err)
             res.send(JSON.stringify(err, null, 5));
-    });
-    user.save(function (err) {
-        if (err)
-            res.send(JSON.stringify(err, null, 5));
-        else
-            res.send(JSON.stringify(user, null, 5));
+        else {
+            res.send(JSON.stringify(users, null, 5));
+        }
     });
 }
 
-//POST user without objective
-//WORKING
+//get 1 user and their objectives
+router.findUserAndObjectives = (req, res) => {
+    var users = {};
+    var objectives = [];
+    User.find({"_id": req.params.id}, function (err, usersArr) {
+        if (err) {
+            console.log(err);
+        } else {
+            users = usersArr;
+        }
+    });
+
+    Objective.find({'user_id': req.params.id}, function (err, objectivesArrs) {
+        if (err) {
+            console.log(err);
+        } else {
+            objectives = objectivesArrs;
+            res.send(JSON.stringify({users: users, objectives: objectives}, null, 5));
+        }
+    });
+}
+
+//POST user
 router.addUser = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
-
     var user = new User();
+
     user.username = req.body.username,
-        user.objectives = [{
-        }]
+        user.email = req.body.email,
+        user.password = req.body.password
 
     user.save(function (err) {
         if (err)
@@ -83,13 +86,60 @@ router.changeUsername = (req, res) => {
         if (err)
             res.send(JSON.stringify(err, null, 5));
         else {
-            user.username = req.body.username;
-            user.save(function (err) {
-                if (err)
-                    res.send(JSON.stringify(err, null, 5));
-                else
-                    res.send(JSON.stringify({Message: "Namw Change Successful", user}, null, 5));
-            });
+            try {
+                user.username = req.body.username;
+                user.save(function (err) {
+                    if (err)
+                        res.send(JSON.stringify(err, null, 5));
+                    else
+                        res.send(JSON.stringify({Message: "Name Change Successful", user}, null, 5));
+                });
+            }
+            catch (err) {
+                res.send(JSON.stringify({Message: "Could not find username, check _id used", err}, null, 5));
+            }
+        }
+    });
+}
+
+router.changeUserPassword = (req, res) => {
+    User.findById(req.params._id, function (err, user) {
+        if (err)
+            res.send(JSON.stringify(err, null, 5));
+        else {
+            try {
+                user.password = req.body.password;
+                user.save(function (err) {
+                    if (err)
+                        res.send(JSON.stringify(err, null, 5));
+                    else
+                        res.send(JSON.stringify({Message: "Password Change Successful", user}, null, 5));
+                });
+            }
+            catch (err) {
+                res.send(JSON.stringify({Message: "Could not find username, check _id used", err}, null, 5));
+            }
+        }
+    });
+}
+
+router.changeUserEmail = (req, res) => {
+    User.findById(req.params._id, function (err, user) {
+        if (err)
+            res.send(JSON.stringify(err, null, 5));
+        else {
+            try {
+                user.email = req.body.email;
+                user.save(function (err) {
+                    if (err)
+                        res.send(JSON.stringify(err, null, 5));
+                    else
+                        res.send(JSON.stringify({Message: "Email Change Successful", user}, null, 5));
+                });
+            }
+            catch (err) {
+                res.send(JSON.stringify({Message: "Could not find username, check _id used", err}, null, 5));
+            }
         }
     });
 }
@@ -102,9 +152,9 @@ router.deleteUser = (req, res) => {
     // Next, find it's position in the list of users
     User.findByIdAndRemove(req.params._id, function (err) {
         if (err)
-            res.send(JSON.stringify({message: 'To Do Not Deleted', err}, null, 5));
+            res.send(JSON.stringify({message: 'User Not Deleted', err}, null, 5));
         else
-            res.send(JSON.stringify({Message: "To DO Deleted"}, null, 5));
+            res.send(JSON.stringify({message: 'User Deleted. Associated To-DOs Not Deleted, Must Be Deleted Individually', err}, null, 5));
     });
 }
 

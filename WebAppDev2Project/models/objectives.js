@@ -1,12 +1,12 @@
 let mongoose = require('mongoose');
 
 let ObjectiveSchema = new mongoose.Schema({
-        todo_id: {type: Number, default: 0},
-        time: String,
-        location: String,
-        goal: String,
-        likes: {type: Number, default: 0}
+        goal:           String,
+        user_id:        String,
+        time:           String,
+        location:       String,
+        likes:          {type: Number, default: 0}
     },
-    {collection: 'tododb'});
+    {collection: 'objectives'});
 
 module.exports = mongoose.model('Objective', ObjectiveSchema);

@@ -1,40 +1,59 @@
 var express = require('express');
 var router = express.Router();
-var User = require('../models/users');
 var Objective = require('../models/objectives');
 
 
 //GET
-
-//POST objectives to users
-router.addObjective = (req, res) => {
-
+router.findAll = (req, res) => {
+    // Return a JSON representation of our list
     res.setHeader('Content-Type', 'application/json');
-    var objective = new Objective();
-    User.findById(req.params._id, function (err, user) {
+    Objective.find(function (err, objectives) {
         if (err)
             res.send(JSON.stringify(err, null, 5));
         else {
-            var todo_id = Math.floor((Math.random() * 1000000) + 1);
-            objective.todo_id = todo_id,
-                objective.time = req.body.time,
-                objective.location = req.body.location,
-                objective.likes = 0,
-                objective.goal = req.body.goal
-
-            user.objectives.push(objective);
-            objective.save(function (err) {
-                if (err)
-                    res.send(JSON.stringify(err, null, 5));
-            });
-            user.save(function (err) {
-                if (err)
-                    res.send(JSON.stringify(err, null, 5));
-                else
-                    res.send(JSON.stringify(user, null, 5));
-            });
-
+            res.send(JSON.stringify(objectives, null, 5));
         }
+    });
+}
+
+router.findOne = (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
+    Objective.find({"_id": req.params.id}, function (err, objective) {
+        if (err)
+            res.send(JSON.stringify(err, null, 5));
+        else
+            res.send(JSON.stringify(objective, null, 5));
+    });
+}
+
+router.findObjectives = (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
+    Objective.find({"user_id": req.params.user_id}, function (err, objective) {
+        if (err)
+            res.send(JSON.stringify(err, null, 5));
+        else
+            res.send(JSON.stringify(objective, null, 5));
+    });
+}
+
+//get all for 1 user
+
+//POST objectives to users
+router.addObjective = (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
+    let objective = new Objective();
+
+    objective.goal = req.body.goal,
+        objective.user_id = req.body.user_id,
+        objective.time = req.body.time,
+        objective.location = req.body.location
+
+
+    objective.save(function (err) {
+        if (err)
+            res.send(JSON.stringify(err, null, 5));
+        else
+            res.send(JSON.stringify(objective, null, 5));
     });
 }
 
@@ -45,13 +64,19 @@ router.changeTime = (req, res) => {
         if (err)
             res.send(JSON.stringify(err, null, 5));
         else {
-            objective.time = req.body.time;
-            objective.save(function (err) {
-                if (err)
-                    res.send(JSON.stringify(err, null, 5));
-                else
-                    res.send(JSON.stringify({Message: "Time Change Successful", objective}, null, 5));
-            });
+            try {
+                objective.time = req.body.time;
+
+                objective.save(function (err) {
+                    if (err)
+                        res.send(JSON.stringify(err, null, 5));
+                    else
+                        res.send(JSON.stringify({Message: "Location Change Successful", objective}, null, 5));
+                });
+            }
+            catch (err) {
+                res.send(JSON.stringify({Message: "Could not find time, check _id used", err}, null, 5));
+            }
         }
     });
 }
@@ -63,13 +88,19 @@ router.changeGoal = (req, res) => {
         if (err)
             res.send(JSON.stringify(err, null, 5));
         else {
-            objective.goal = req.body.goal;
-            objective.save(function (err) {
-                if (err)
-                    res.send(JSON.stringify(err, null, 5));
-                else
-                    res.send(JSON.stringify({Message: "Goal Change Successful", objective}, null, 5));
-            });
+            try {
+                objective.goal = req.body.goal;
+
+                objective.save(function (err) {
+                    if (err)
+                        res.send(JSON.stringify(err, null, 5));
+                    else
+                        res.send(JSON.stringify({Message: "Location Change Successful", objective}, null, 5));
+                });
+            }
+            catch (err) {
+                res.send(JSON.stringify({Message: "Could not find time, check _id used", err}, null, 5));
+            }
         }
     });
 }
@@ -80,13 +111,19 @@ router.changeLocation = (req, res) => {
         if (err)
             res.send(JSON.stringify(err, null, 5));
         else {
-            objective.location = req.body.location;
-            objective.save(function (err) {
-                if (err)
-                    res.send(JSON.stringify(err, null, 5));
-                else
-                    res.send(JSON.stringify({Message: "Location Change Successful", objective}, null, 5));
-            });
+            try {
+                objective.location = req.body.location
+
+                objective.save(function (err) {
+                    if (err)
+                        res.send(JSON.stringify(err, null, 5));
+                    else
+                        res.send(JSON.stringify({Message: "Location Change Successful", objective}, null, 5));
+                });
+            }
+            catch (err) {
+                res.send(JSON.stringify({Message: "Could not find location, check _id used", err}, null, 5));
+            }
         }
     });
 }
@@ -98,50 +135,32 @@ router.likeObjective = (req, res) => {
         if (err)
             res.send(JSON.stringify(err, null, 5));
         else {
-            objective.likes += 1;
-            objective.save(function (err) {
-                if (err)
-                    res.send(JSON.stringify(err, null, 5));
-                else
-                    res.send(JSON.stringify({Message: "Like Successful", objective}, null, 5));
-            });
+            try {
+                objective.likes = likes + 1
+
+                objective.save(function (err) {
+                    if (err)
+                        res.send(JSON.stringify(err, null, 5));
+                    else
+                        res.send(JSON.stringify({Message: "Likes Increase Successful", objective}, null, 5));
+                });
+            }
+            catch (err) {
+                res.send(JSON.stringify({Message: "Could not find likes, check _id used", err}, null, 5));
+            }
         }
     });
 }
 
 
 //DELETE objective
-//todo
 router.deleteObjective = (req, res) => {
-    //Delete the selected user based on its id
-    // First, find the relevant user to delete
-    // Next, find it's position in the list of users
-    //Delete the selected user based on its id
-    // First, find the relevant user to delete
-    // Next, find it's position in the list of users
     res.setHeader('Content-Type', 'application/json');
-    user = findU
-    objective.findByIdAndRemove(req.params._id2, function (err) {
+    Objective.findByIdAndRemove(req.params._id, function (err) {
         if (err)
             res.send(JSON.stringify({message: 'To Do Not Deleted', err}, null, 5));
         else
             res.send(JSON.stringify({Message: "To DO Deleted"}, null, 5));
-    });
-
-    //mongo db resources sql like commands,
-    //refernces mongo multiple collections query example
-    //ref
-    //mongo ref example
-    //.populate call
-}
-
-router.findUser = (req, res) => {
-    res.setHeader('Content-Type', 'application/json');
-    User.find({"_id": req.params.id}, function (err, user) {
-        if (err)
-            res.send(JSON.stringify(err, null, 5));
-        else
-
     });
 }
 

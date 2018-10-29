@@ -1,10 +1,10 @@
 let mongoose = require('mongoose');
 
 let UserSchema = new mongoose.Schema({
-        username: String,
-        objectives: [{
-        }]
+        username:       String,
+        password:       String,
+        email:          String
     },
-    {collection: 'tododb'});
+    {collection: 'users'});
 
 module.exports = mongoose.model('User', UserSchema);
