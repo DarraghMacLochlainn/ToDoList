@@ -1,3 +1,221 @@
+GET http://localhost:3000/objectives/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Pink Floyd","password":"Hammer","email":"Comfortably@Numn.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "time": "After the trial", "location": "Outside the Wall"}
+
+<> 2018-10-29T025147.200.json
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Pink Floyd","password":"Hammer","email":"Comfortably@Numn.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "time": "After the trial", "location": "Outside the Wall"}
+
+<> 2018-10-29T025106.200.json
+
+###
+
+DELETE http://localhost:3000/users/5bd60057d1c48411dcaf46bc
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Pink Floyd","password":"Hammer","email":"Comfortably@Numn.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "time": "After the trial", "location": "Outside the Wall"}
+
+<> 2018-10-29T025102.200.html
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Pink Floyd","password":"Hammer","email":"Comfortably@Numn.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "time": "After the trial", "location": "Outside the Wall"}
+
+<> 2018-10-29T025049.200.json
+
+###
+
+DELETE http://localhost:3000/users/5bd71df72c5d74210c83a572
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Pink Floyd","password":"Hammer","email":"Comfortably@Numn.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "time": "After the trial", "location": "Outside the Wall"}
+
+<> 2018-10-29T025040.200.html
+
+###
+
+POST http://localhost:3000/users/5bd71df72c5d74210c83a572
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Pink Floyd","password":"Hammer","email":"Comfortably@Numn.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "time": "After the trial", "location": "Outside the Wall"}
+
+<> 2018-10-29T025033.404.html
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Pink Floyd","password":"Hammer","email":"Comfortably@Numn.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "time": "After the trial", "location": "Outside the Wall"}
+
+<> 2018-10-29T025020.200.json
+
+###
+
+PUT http://localhost:3000/users/5bd6255ceb60021c185bf546/Password
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Pink Floyd","password":"Hammer","email":"Comfortably@Numn.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "time": "After the trial", "location": "Outside the Wall"}
+
+<> 2018-10-29T025004.200.html
+
+###
+
+PUT http://localhost:3000/users/5bd6255ceb60021c185bf546/Email
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Pink Floyd","password":"Hammer","email":"Comfortably@Numn.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "time": "After the trial", "location": "Outside the Wall"}
+
+<> 2018-10-29T024959.200.html
+
+###
+
+PUT http://localhost:3000/users/5bd6255ceb60021c185bf546/Name
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Pink Floyd","password":"Hammer","email":"Comfortably@Numn.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "time": "After the trial", "location": "Outside the Wall"}
+
+<> 2018-10-29T024954.200.html
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Pink Floyd","password":"Hammer","email":"Comfortably@Numn.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "time": "After the trial", "location": "Outside the Wall"}
+
+<> 2018-10-29T024940.200.json
+
+###
+
+POST http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Pink Floyd","password":"Hammer","email":"Comfortably@Numn.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "time": "After the trial", "location": "Outside the Wall"}
+
+<> 2018-10-29T024927.200.json
+
+###
+
+GET http://localhost:3000/users/5bd6255ceb60021c185bf546/profile
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Pink Floyd","password":"Hammer","email":"Comfortably@Numn.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "time": "After the trial", "location": "Outside the Wall"}
+
+<> 2018-10-29T024915.200.html
+
+###
+
+GET http://localhost:3000/users/5bd6255ceb60021c185bf546
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Pink Floyd","password":"Hammer","email":"Comfortably@Numn.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "time": "After the trial", "location": "Outside the Wall"}
+
+<> 2018-10-29T024908.200.json
+
+###
+
+GET http://localhost:3000/users/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Pink Floyd","password":"Hammer","email":"Comfortably@Numn.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "time": "After the trial", "location": "Outside the Wall"}
+
+<> 2018-10-29T024901.200.json
+
+###
+
+GET http://localhost:3000/users/5bd6255ceb60021c185bf546
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Pink Floyd","password":"Hammer","email":"Comfortably@Numn.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "time": "After the trial", "location": "Outside the Wall"}
+
+<> 2018-10-29T023427.200.json
+
+###
+
+GET http://localhost:3000/users
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Pink Floyd","password":"Hammer","email":"Comfortably@Numn.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "time": "After the trial", "location": "Outside the Wall"}
+
+<> 2018-10-29T023417.200.json
+
+###
+
+GET http://localhost:3000/objectives
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Pink Floyd","password":"Hammer","email":"Comfortably@Numn.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "time": "After the trial", "location": "Outside the Wall"}
+
+<> 2018-10-29T023355.200.json
+
+###
+
+GET http://localhost:3000/users
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Pink Floyd","password":"Hammer","email":"Comfortably@Numn.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "time": "After the trial", "location": "Outside the Wall"}
+
+<> 2018-10-29T023346.200.json
+
+###
+
+GET http://localhost:3000/users
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Pink Floyd","password":"Hammer","email":"Comfortably@Numn.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "time": "After the trial", "location": "Outside the Wall"}
+
+###
+
 GET http://localhost:3000/
 Accept: */*
 Cache-Control: no-cache
@@ -321,222 +539,6 @@ Cache-Control: no-cache
 Content-Type: application/json
 
 {"username":"David Bowie","password":"HandyLady","email":"Killer@Queen.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "username": "Pink Floyd", "time": "After the trial", "location": "Outside the Wall"}
-
-###
-
-DELETE http://localhost:3000/users/5bd60057d1c48411dcaf46bc
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"David Bowie","password":"HandyLady","email":"Killer@Queen.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "username": "Pink Floyd", "time": "After the trial", "location": "Outside the Wall"}
-
-###
-
-DELETE http://localhost:3000/users/5bd60057d1c48411dcaf46bc
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"David Bowie","password":"HandyLady","email":"Killer@Queen.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "username": "Pink Floyd", "time": "After the trial", "location": "Outside the Wall"}
-
-###
-
-GET http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"David Bowie","password":"HandyLady","email":"Killer@Queen.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "username": "Pink Floyd", "time": "After the trial", "location": "Outside the Wall"}
-
-<> 2018-10-28T101631.200.json
-
-###
-
-GET http://localhost:3000/user/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"David Bowie","password":"HandyLady","email":"Killer@Queen.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "username": "Pink Floyd", "time": "After the trial", "location": "Outside the Wall"}
-
-<> 2018-10-28T101628.404.html
-
-###
-
-POST http://localhost:3000/objectives/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"David Bowie","password":"HandyLady","email":"Killer@Queen.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "username": "Pink Floyd", "time": "After the trial", "location": "Outside the Wall"}
-
-<> 2018-10-28T101405.200.json
-
-###
-
-GET http://localhost:3000/objectives/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"David Bowie","password":"HandyLady","email":"Killer@Queen.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "username": "Pink Floyd", "time": "After the trial", "location": "Outside the Wall"}
-
-<> 2018-10-28T101353.200.json
-
-###
-
-DELETE http://localhost:3000/objectives/5bd62561eb60021c185bf547
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"David Bowie","password":"HandyLady","email":"Killer@Queen.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "username": "Pink Floyd", "time": "After the trial", "location": "Outside the Wall"}
-
-<> 2018-10-28T101348.200.json
-
-###
-
-DELETE http://localhost:3000/objectives/5bd600dd2286541f34515325
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"David Bowie","password":"HandyLady","email":"Killer@Queen.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "username": "Pink Floyd", "time": "After the trial", "location": "Outside the Wall"}
-
-<> 2018-10-28T101345.200.json
-
-###
-
-GET http://localhost:3000/objectives/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"David Bowie","password":"HandyLady","email":"Killer@Queen.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "username": "Pink Floyd", "time": "After the trial", "location": "Outside the Wall"}
-
-<> 2018-10-28T101331.200.json
-
-###
-
-DELETE http://localhost:3000/objectives/5bd600d92286541f34515324
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"David Bowie","password":"HandyLady","email":"Killer@Queen.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "username": "Pink Floyd", "time": "After the trial", "location": "Outside the Wall"}
-
-<> 2018-10-28T101326.200.json
-
-###
-
-DELETE http://localhost:3000/objectives/5bd60057d1c48411dcaf46bc
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"David Bowie","password":"HandyLady","email":"Killer@Queen.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "username": "Pink Floyd", "time": "After the trial", "location": "Outside the Wall"}
-
-<> 2018-10-28T101320.200.json
-
-###
-
-GET http://localhost:3000/objectives/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"David Bowie","password":"HandyLady","email":"Killer@Queen.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "username": "Pink Floyd", "time": "After the trial", "location": "Outside the Wall"}
-
-<> 2018-10-28T101306.200.json
-
-###
-
-POST http://localhost:3000/objectives/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"David Bowie","password":"HandyLady","email":"Killer@Queen.com", "goal": "Tear Down The Wall", "user_id":"5bd60057d1c48411dcaf46bc", "username": "Pink Floyd", "time": "After the trial", "location": "Outside the Wall"}
-
-<> 2018-10-28T101259.200.json
-
-###
-
-GET http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"David Bowie","password":"HandyLady","email":"Killer@Queen.com", "goal": "Tear Down The Wall", "user_id":"5bd6255ceb60021c185bf546", "username": "Pink Floyd", "time": "After the trial", "location": "Outside the Wall"}
-
-<> 2018-10-28T101246.200.json
-
-###
-
-GET http://localhost:3000/objectives/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"David Bowie","password":"HandyLady","email":"Killer@Queen.com", "goal":"Live a normal life", "user_id":"5bd6255ceb60021c185bf546","time":"all day, every day","location":"Japan","likes":0}
-
-<> 2018-10-28T101139.200.json
-
-###
-
-DELETE http://localhost:3000/objectives/5bd633482a9e6a1d8cf868e5
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"David Bowie","password":"HandyLady","email":"Killer@Queen.com", "goal":"Live a normal life", "user_id":"5bd6255ceb60021c185bf546","time":"all day, every day","location":"Japan","likes":0}
-
-<> 2018-10-28T101135.200.json
-
-###
-
-DELETE http://localhost:3000/objectives/5bd633702a9e6a1d8cf868e6
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"David Bowie","password":"HandyLady","email":"Killer@Queen.com", "goal":"Live a normal life", "user_id":"5bd6255ceb60021c185bf546","time":"all day, every day","location":"Japan","likes":0}
-
-<> 2018-10-28T101133.200.json
-
-###
-
-GET http://localhost:3000/objectives/5bd633702a9e6a1d8cf868e6
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"David Bowie","password":"HandyLady","email":"Killer@Queen.com", "goal":"Live a normal life", "user_id":"5bd6255ceb60021c185bf546","time":"all day, every day","location":"Japan","likes":0}
-
-<> 2018-10-28T101129.200.json
-
-###
-
-GET http://localhost:3000/objectives/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"David Bowie","password":"HandyLady","email":"Killer@Queen.com", "goal":"Live a normal life", "user_id":"5bd6255ceb60021c185bf546","time":"all day, every day","location":"Japan","likes":0}
-
-<> 2018-10-28T101115.200.json
-
-###
-
-GET http://localhost:3000/objectives/5bd6255ceb60021c185bf546/profile
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"David Bowie","password":"HandyLady","email":"Killer@Queen.com", "goal":"Live a normal life", "user_id":"5bd6255ceb60021c185bf546","time":"all day, every day","location":"Japan","likes":0}
-
-<> 2018-10-28T101106.200.json
 
 ###
 

@@ -1,0 +1,8 @@
+Name:	Darragh Mac Lochlainn
+Student ID:	20076319
+Link To Git:	https://github.com/DarraghMacLochlainn/ToDoList
+       https://github.com/DarraghMacLochlainn/ToDoList-DEFUNCT-
+Functionality:	A To-Do list where users can add and remove objectives for them to do, add users, update the objectives’ goals, times, likes and locations and users’ names, emails and password.
+Persistence Approach:	Used mongodb but now uses mlab to store entries.
+Git Approach:	After the day’s work was done, git was updated. 
+DX Approach:	
