@@ -147,9 +147,6 @@ router.changeUserEmail = (req, res) => {
 
 //DELETE User and Objectives
 router.deleteUser = (req, res) => {
-    //Delete the selected user based on its id
-    // First, find the relevant user to delete
-    // Next, find it's position in the list of users
     User.findByIdAndRemove(req.params._id, function (err) {
         if (err)
             res.send(JSON.stringify({message: 'User Not Deleted', err}, null, 5));

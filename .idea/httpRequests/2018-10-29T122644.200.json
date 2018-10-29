@@ -1,12 +1,5 @@
 [
   {
-    "_id": "5bd60057d1c48411dcaf46bc",
-    "username": "Pink Floyd",
-    "email": "Pink@TheShow.com",
-    "password": "ComfortablyNumb",
-    "__v": 0
-  },
-  {
     "_id": "5bd6255ceb60021c185bf546",
     "username": "David Bowie",
     "email": "Killer@Queen.com",
@@ -14,7 +7,7 @@
     "__v": 0
   },
   {
-    "_id": "5bd633412a9e6a1d8cf868e4",
+    "_id": "5bd653610942343784f1237c",
     "username": "David Bowie",
     "email": "Killer@Queen.com",
     "password": "HandyLady",

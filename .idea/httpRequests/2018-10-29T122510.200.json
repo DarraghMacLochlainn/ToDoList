@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "5bd6255ceb60021c185bf546",
+    "username": "David Bowie",
+    "email": "Killer@Queen.com",
+    "password": "HandyLady",
+    "__v": 0
+  },
+  {
+    "_id": "5bd653430942343784f1237b",
+    "username": "Pink Floyd",
+    "email": "Killer@Queen.com",
+    "password": "HandyLady",
+    "__v": 0
+  },
+  {
+    "_id": "5bd653610942343784f1237c",
+    "username": "David Bowie",
+    "email": "Killer@Queen.com",
+    "password": "HandyLady",
+    "__v": 0
+  }
+]
