@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63270d73-accf-4591-885c-b29df715ea52" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-28T100808.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-28T100828.404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-28T100832.200.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-28T100837.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-28T100848.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-28T100937.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-28T100948.200.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-28T100951.404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-28T100954.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-28T101016.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-28T101028.200.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-28T101050.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppDev2Project/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppDev2Project/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppDev2Project/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppDev2Project/routes/users.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -2277,7 +2262,7 @@
       <workItem from="1540666906353" duration="2229000" />
       <workItem from="1540732057704" duration="24944000" />
       <workItem from="1540782705304" duration="598000" />
-      <workItem from="1540812873558" duration="1242000" />
+      <workItem from="1540812873558" duration="1842000" />
     </task>
     <task id="LOCAL-00001" summary="Routes are near fully completed.&#10;POST is done&#10;GET is done&#10;DELETE is done&#10;PUT hasn't been started">
       <created>1539034089376</created>
@@ -2290,7 +2275,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82819000" />
+    <option name="totallyTimeSpent" value="83419000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
