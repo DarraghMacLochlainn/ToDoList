@@ -137,10 +137,10 @@ router.deleteObjective = (req, res) => {
 
 router.findUser = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
-    User.find({"_id": req.params.id}, function (err, user) {
+    User.find({"_id": req.params.id}, function (err, user){
         if (err)
             res.send(JSON.stringify(err, null, 5));
-        else
+        else{}
 
     });
 }
