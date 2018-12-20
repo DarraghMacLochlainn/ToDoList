@@ -5,6 +5,18 @@ var Objective = require('../models/objectives');
 
 
 //GET
+router.findAllObjectives = (req, res) => {
+    // Return a JSON representation of our list
+    res.setHeader('Content-Type', 'application/json');
+
+    Objective.find(function (err, objectives) {
+        if (err)
+            res.send(JSON.stringify(err, null, 5));
+        else {
+            res.send(JSON.stringify(objectives, null, 5));
+        }
+    });
+}
 
 //POST objectives to users
 router.addObjective = (req, res) => {

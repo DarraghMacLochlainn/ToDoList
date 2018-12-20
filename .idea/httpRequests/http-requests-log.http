@@ -1,3 +1,47 @@
+GET http://localhost:3000/objectives
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-12-20T101302.200.json
+
+###
+
+GET http://localhost:3000/objectives
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-12-20T101107.200.json
+
+###
+
+GET http://localhost:3000/users
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-12-20T101102.200.json
+
+###
+
+GET http://localhost:3000/users
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
+
+<> 2018-12-20T095918.200.json
+
+###
+
 DELETE http://localhost:3000/objectives/5bcd07efac543a1d709e75d2/5bcd08b78cc2eb137c0959e0
 Accept: */*
 Cache-Control: no-cache
@@ -478,48 +522,6 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3000/users/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
-
-###
-
-GET http://localhost:3000/objectives/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
-
-<> 2018-10-22T015942.200.json
-
-###
-
-GET http://localhost:3000/objectives/5bcd07efac543a1d709e75d2
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
-
-<> 2018-10-22T015807.200.json
-
-###
-
-GET http://localhost:3000/objectives/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"username":"Davggid Bowie","todo_id":"0","time":"All day","location":"Japan","goal":"Live a normal life","likes":0}
-
-<> 2018-10-22T015801.200.json
-
-###
-
-POST http://localhost:3000/objectives/
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json

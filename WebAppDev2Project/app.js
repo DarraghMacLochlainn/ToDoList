@@ -26,6 +26,7 @@ app.use('/', indexRouter);
 //GET
 app.get('/users', users.findAll);
 app.get('/users/:id', users.findOne);
+app.get('/objectives', objectives.findAllObjectives);
 
 //POST
 app.post('/users/profile', users.addUserAndObjective);
@@ -44,7 +45,7 @@ app.put('/objectives/:_id/support', objectives.likeObjective);
 app.delete('/objectives/:_id1/:_id2', objectives.deleteObjective);
 app.delete('/users/:_id', users.deleteUser);
 
-var mongodbUri ='mongodb://tododbuser:tododb1@ds137913.mlab.com:37913/tododb';
+var mongodbUri ='mongodb://tododb:todo11@ds137913.mlab.com:37913/tododb';
 mongoose.connect(mongodbUri);
 
 let db = mongoose.connection;
